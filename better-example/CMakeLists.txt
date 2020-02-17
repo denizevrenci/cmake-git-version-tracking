@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 # Define the two required variables before including
 # the source code for watching a git repository.
+set(GIT_INDEX_FILE "../.git/index")
 set(PRE_CONFIGURE_FILE "git.cc.in")
 set(POST_CONFIGURE_FILE "${CMAKE_CURRENT_BINARY_DIR}/git.cpp")
 include(git_watcher.cmake)
